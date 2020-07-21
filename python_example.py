@@ -1,7 +1,5 @@
 def swap(x: int, y: int) -> None:
-	tmp = y
-	x = y
-	y = x
+	x, y = y, x
 
 def print_hello_world() -> None:
 	print("Hello World!")
@@ -13,3 +11,9 @@ def is_palindrome(my_str: str) -> bool:
 			return False
 
 	return True
+
+def find_factorial(n: int) -> int:
+	prod = 1
+	for i in range(n):
+		prod *= i
+	return prod
